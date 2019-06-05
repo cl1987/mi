@@ -220,14 +220,15 @@
 }
 .header .head-nav-content{
 	width:100%;
-	height:150px;
+	height:0px;
 	position: absolute;
 	top:80px;
 	left: 0px;
 	background-color: #FFF;
 	z-index: 1009;
-	margin-top:1px solid #ccc;
-	box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+	/*border-top:1px solid #ccc;*/
+	overflow: hidden;
+	box-shadow:2px 2px 10px rgba(0,0,0,0.3);
 }
 .header .head-nav-content li{
 	position: relative;
@@ -237,15 +238,15 @@
 	text-align: center;
 }
 .header .head-nav-content li .tag{
-	width:60px;
+	width:74px;
 	height:24px;
 	border: 1px solid #ff6700;
 	line-height:24px;
 	text-align: center;
 	position: absolute;
-	top: 0px;
+	top: -1px;
 	left:50%;
-	margin-left: -30px;	
+	margin-left: -37px;	
 }
 .header .head-nav-content li .img-box{
 	margin-top: 30px;
@@ -254,14 +255,16 @@
 	border-right:1px solid #ccc;
 }
 .header .head-nav-content li .img-box img{
-	width:90px;
-	height:90px;
+	width:100px;
+	height:100px;
 }
 .header .head-nav-content li .head-nav-name{
+	margin-top:10px;
 	font-size:12px;
 	color:#000;
 }
 .header .head-nav-content li .head-nav-price{
+	margin-top:10px;
 	font-size:12px;
 	color:#FF6700;
 }
@@ -295,7 +298,7 @@
 	opacity:0.5;
 	position:absolute;
 	top: 0px;
-	left:174px;
+	left:335px;
 }
 .home .sideinfor .sideinfor1{
 	width:236px;
@@ -340,7 +343,7 @@
 	float:right;
 	position: absolute;
 	top:220px;
-	right:13%;
+	right:19%;
 	margin-top: -30px;
 	font-size:32px;
 	font-weight:bolder;
@@ -358,8 +361,8 @@
 	margin-top: -30px;
 	text-align: center;
 	position: absolute;
-	top:220px;
-	left:440px;
+	top:215px;
+	left:597px;
 	font-size:32px;
 	font-weight:bolder;
 	color:#bbb;
@@ -372,7 +375,7 @@
 .home .acircle{
 	position:absolute;
 	bottom:422px;
-	right:220px;
+	right:335px;
 }
 .home .circle{
 	width:12px;

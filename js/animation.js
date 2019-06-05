@@ -60,9 +60,9 @@ function animate(obj,options,isLinear,fnEnd){
 			if(isLinear){//匀速动画
 				// 匀速动画取值
 				if(currentVal < options[attr]){
-					iSpeed = 10;
+					iSpeed = 15;
 				}else{
-					iSpeed = -10;
+					iSpeed = -15;
 				}
 				// 动画的终止条件
 				if(Math.abs(options[attr] - currentVal) < Math.abs(iSpeed)){
