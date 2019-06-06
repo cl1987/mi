@@ -95,3 +95,14 @@ function handleNav(){
 		oContainer.innerHTML=html;
 	}
 }
+//3.处理轮播图
+handleCoursel();
+function handleCoursel(){
+	new Coursel({//传入一个对象作为参数
+		id:'coursel',
+		width:1236,
+		height:461,
+		img:["imgs/b1.jpg","imgs/b2.jpg","imgs/b3.jpg"],
+		playtime:3000
+	});
+}
