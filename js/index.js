@@ -29,13 +29,23 @@ function handleNav(){
 	var aNavItem=document.querySelectorAll('.header .header-list-1');
 	var aNavContent=document.querySelector('.header .head-nav-content');
 	var hidTimer=0;
-	for(i=0; i<aNavItem.length;i++){
+	var oContainer=aNavContent.querySelector(".container");
+	var dataTime=0;
+	// console.log(oContainer)
+	for(var i=0; i<aNavItem.length;i++){
+			aNavItem[i].index=i;
 		aNavItem[i].onmouseenter=function(){
 			clearTimeout(hidTimer)
 			aNavContent.style.borderTop="1px solid #ccc"
 			animate(aNavContent,{height:250},true,function(){
 				aNavContent.style.overflow="visible";
 			})
+			oContainer.innerHTML='<div class="loading"></div>';
+			var index=this.index;
+			clearTimeout(dataTime);
+			dataTime=setTimeout(function(){
+				loadData(index);
+			},1000)
 		}
 		aNavItem[i].onmouseleave=function(){
 			// hidTimer=setTimeout(function(){
@@ -60,5 +70,28 @@ function handleNav(){
 					aNavContent.style.borderTop="none"
 				})
 			},300)
+	}
+	function loadData(index){
+		var data=aNavData[index];
+		// console.log(data)
+		var html="";
+			html+=	'<ul>'
+			for(var i=0;i<data.length;i++){
+				html+=			'<li>';
+				html+=			'	<a href="'+data[i].url+'">';
+				html+=			'		<div class="img-box">';
+				html+=			'			<img src="'+data[i].src+'" alt="">';
+				html+=			'		</div>';
+				html+=			'		<p class="head-nav-name">'+data[i].name+'</p>';
+				html+=			'		<p class="head-nav-price">'+data[i].price+'元</p>';
+				if(data[i].tag){
+					html+=			'	<span class="tag">'+data[i].tag+'</span>';
+				}
+				
+				html+=			'	</a>';
+				html+=			'</li>';
+			}
+			html+=	'</ul>'
+		oContainer.innerHTML=html;
 	}
 }
