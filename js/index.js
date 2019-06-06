@@ -128,12 +128,12 @@ function handleCate(){
 			loadData(this.index)
 		}
 	}
-	// oCateBox.onmouseleave=function(){
-	// 	oCateContent.style.display='none';
-	// 	for(var j=0;j<oCateItem.length;j++){
-	// 			oCateItem[j].className='sideinfor1'
-	// 		}	
-	// }
+	oCateBox.onmouseleave=function(){
+		oCateContent.style.display='none';
+		for(var j=0;j<oCateItem.length;j++){
+				oCateItem[j].className='sideinfor1'
+			}	
+	}
 	function loadData(index){
 		var data=aCateContentData[index];
 		var html="";
@@ -147,13 +147,32 @@ function handleCate(){
 				html+=		'</li>';
 			}
 			html+=	'</ul>';
-
-
-
-
-
-
-
 		oCateContent.innerHTML=html;
+	}
+}
+//5.处理倒计时
+handelCountDown()
+function handelCountDown(){
+	var aTimerNum=document.querySelectorAll('.flash .flashthing .col1 .timer-num')
+	console.log(aTimerNum)
+	var endTime=new Date("2019-06-08 17:30:00");
+	var timer=null;
+	function handelTimer(){
+		var allSeconds=parseInt((endTime.getTime()-Date.now())/1000);
+		if(allSeconds<=0){
+			allSeconds=0;
+			clearInterval(timer);
+		}
+		var hours=parseInt(allSeconds/3600);
+		var minutes=parseInt(allSeconds%3600/60);
+		var second=parseInt(allSeconds%3600%60)
+		aTimerNum[0].innerHTML=to2Str(hours);
+		aTimerNum[1].innerHTML=to2Str(minutes);
+		aTimerNum[2].innerHTML=to2Str(second);
+	}
+	timer=setInterval(handelTimer,500);
+	handelTimer()
+	function to2Str(num){
+		return num>=10 ? ""+num:"0"+num;
 	}
 }
