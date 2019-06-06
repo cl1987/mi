@@ -1,13 +1,3 @@
-/*
-	<a href="#">
-		<div class="img-box">
-			<img src="imgs/p1.jpg" alt="">
-		</div>
-		<p class="head-nav-name">小米9</p>
-		<p class="head-nav-price">2999元</p>
-		<span class="tag">新品</span>
-	</a>
-*/
 var aNavData=[
 	[
 		{
@@ -216,4 +206,31 @@ var aNavData=[
 	],
 	[],
 	[]
+]
+
+var aCateContentData=[
+	[
+		{
+			url:"https://www.kuazhu.com/",
+			src:"imgs/p1.jpg",
+			name:"小米2",
+		},
+		{
+			url:"https://www.kuazhu.com/",
+			src:"imgs/p2.jpg",
+			name:"小米MIx",
+		}
+	],
+	[
+		{
+			url:"https://www.kuazhu.com/",
+			src:"imgs/p1.jpg",
+			name:"小米2",
+		},
+		{
+			url:"https://www.kuazhu.com/",
+			src:"imgs/p2.jpg",
+			name:"小米MIx",
+		}
+	]
 ]

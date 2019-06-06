@@ -106,3 +106,54 @@ function handleCoursel(){
 		playtime:3000
 	});
 }
+//4.处理分类面板
+handleCate();
+function handleCate(){
+	var oCateItem=document.querySelectorAll('.home .zhanshi .cate-box .cate .sideinfor1')
+	// console.log(oCateItem)
+	var oCateContent=document.querySelector('.home .zhanshi .cate-box .cate-content')
+	// console.log(oCateContent)
+	var oCateBox=document.querySelector('.home .zhanshi .cate-box')
+	console.log(oCateBox)
+	for(var i=0;i<oCateItem.length;i++){
+		oCateItem[i].index=i;
+		oCateItem[i].onmouseenter=function(){
+			for(var j=0;j<oCateItem.length;j++){
+				oCateItem[j].className='sideinfor1'
+				// oCateItem[0].className='sideinfor1 solo'
+				// oCateItem[oCateItem.length-1].className='sideinfor1 solo'
+			}
+			oCateContent.style.display='block';
+			this.className='sideinfor1 active'
+			loadData(this.index)
+		}
+	}
+	// oCateBox.onmouseleave=function(){
+	// 	oCateContent.style.display='none';
+	// 	for(var j=0;j<oCateItem.length;j++){
+	// 			oCateItem[j].className='sideinfor1'
+	// 		}	
+	// }
+	function loadData(index){
+		var data=aCateContentData[index];
+		var html="";
+			html+=	'<ul>';
+			for(var i=0;i<data.length;i++){
+				html+=		'<li>';
+				html+=			'<a href="'+data[i].url+'">';
+				html+=				'<img src="'+data[i].src+'" alt="">';
+				html+=				'<span>'+data[i].name+'</span>';
+				html+=			'</a>';
+				html+=		'</li>';
+			}
+			html+=	'</ul>';
+
+
+
+
+
+
+
+		oCateContent.innerHTML=html;
+	}
+}
