@@ -176,3 +176,46 @@ function handelCountDown(){
 		return num>=10 ? ""+num:"0"+num;
 	}
 }
+//6.处理家电
+handelElec()
+function handelElec(){
+	var oEitem=document.querySelectorAll(".hezi .nodie");
+	var oElecList=document.querySelector(".elec-item-list");
+	console.log(oElecList)
+	console.log(oEitem);
+	for(var i=0; i<oEitem.length;i++){
+		oEitem[i].index=i;
+		oEitem[i].onmouseenter=function(){
+			for(var j=0;j<oEitem.length;j++){
+				oEitem[j].className='nodie'
+			}
+			this.className="nodie active-nodie"
+			loadData(this.index)
+		}
+	}
+	function loadData(index){
+		var data=aElect[index];
+		var html="";
+		for(var i=0;i<data.length;i++){
+			html+=	'<li class="shouji clearfix">';
+			html+=	'	<a href="'+data[i].url+'">';
+			html+=	'		<img src="'+data[i].src+'" alt="" class="road1">';
+			html+=	'		<p class="p1">'+data[i].name+'</p>';
+			html+=	'		<p class="p2">'+data[i].des+'</p>';
+			html+=	'		<p class="p3">'+data[i].price+'元</p>';
+			html+=	'		<p class="p3">'+data[i].del+'元</p>';
+			html+=	'	</a>';
+			if(data[i].flag){
+				html+='<p class="biaoqian'+data[i].flag.class+'">'+data[i].flag.name+'</p>'
+			}
+			if(data[i].view){
+				html+=	'	<div class="yincang">';
+				html+=	'		<p class="ppn">'+data[i].view.common+'</p>';
+				html+=	'		<p class="ppj">'+data[i].view.author+'</p>';
+				html+=	'	</div>';
+			}
+			html+=	'</li>';
+		}
+		oElecList.innerHTML=html;
+	}
+}

@@ -577,7 +577,7 @@
 /*.main .container{
 	background:#f5f5f5;*/
 }
-.flash .flashthing .road{
+.flash .flashthing{
 	width: 235px;
 	height: 307px;
 	float:left;
@@ -620,9 +620,29 @@
 	 color:#fff;
 	 font-weight: bolder;
 }
+.flash{
+	overflow: hidden;
+	/*width: 2472px;*/
+}
 .flash .flashthing .col1 .dash{
 	font-size:18px;
 	font-weight: bolder;
+}
+.flash .flashthing{
+	overflow: hidden;
+	width: 1236px;
+}
+.flash .flashthing .fenqu{
+	width:2472px;
+	/*height:298px;*/
+	/*border:1px solid red;*/
+	float: left;
+	/*overflow: hidden;*/
+	
+}
+.flash .flashthing .fenqu .shouji{
+	float:left;
+	overflow: hidden;
 }
 .main .hezi{
 	width:100%;
@@ -770,7 +790,7 @@
 	padding-bottom:2px;
 	box-sizing:border-box;
 }
-.hezi .nodie:first-child{
+.hezi .nodie.active-nodie{
 	color:#ff6700;
 /*	text-decoration:underline;*/
 	border-bottom: 2px solid #ff6700;
