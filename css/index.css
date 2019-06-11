@@ -133,7 +133,7 @@
 	outline:none;
 	box-sizing: border-box;
 	border:1px solid #e0e0e0;
-	border-right: none;
+	/*border-right: none;*/
 	box-sizing: border-box;
 }
 .header-search-2{
@@ -179,26 +179,31 @@
 	margin-right:6px;
 }
 .display-box{
-	width:298px;
+	width:248px;
 	border:1px solid #ff6700;
+	/*margin-right: 1px solid #ff6700;*/
 	border-top: none;
 	display:none;
 	z-index:666;
 	position: absolute;
 	top:52px;
 	left: 0px;
+	/*box-sizing: border-box;*/
 }
 .header-search .header-search-1:focus ~ .display-box{
 	display:block;
-	z-index:777;
+	z-index:999999;
+}
+.header-search .header-search-1:focus ~ .keywords{
+	display: none;
 }
 .display-box .display-box1{
 	height:48px;
-	width:298px;
+	width:248px;
 	background:#fff;
 	line-height:48px;
 	text-align:center;
-/*	border:1px solid #ff6700;*/
+	/*border:1px solid #ff6700;*/
 	cursor:pointer;
 	z-index:99;
 }
@@ -584,7 +589,7 @@
 	cursor:pointer;
 	transition:all 0.3s;
 }
-.flash .flashthing .col1{
+.flash .col1{
 	width:235px;
 	height:298px;
 	background: #fff;
@@ -593,23 +598,23 @@
 	cursor:pointer;
 	text-align: center;
 }
-.flash .flashthing .col1:hover{
+.flash .col1:hover{
 	transform:translateY(-5px);
 	box-shadow:3px 4px 2px lightgray;
 	transition:all 0.3s;
 }
-.flash .flashthing .col1 .time-name{
+.flash .col1 .time-name{
 	margin-top:60px;
 	margin-bottom: 15px;
 	font-size: 20px;
 	color:red;
 }
-.flash .flashthing .col1 .timer-end{
+.flash .col1 .timer-end{
 	margin-top:10px;
 	margin-bottom: 15px;
 	font-size:12px;
 }
-.flash .flashthing .col1 .timer-num{
+.flash .col1 .timer-num{
 	display: inline-block;
 	 width: 46px;
 	 height: 46px;
@@ -623,26 +628,29 @@
 .flash{
 	overflow: hidden;
 	/*width: 2472px;*/
+	position: relative;
 }
-.flash .flashthing .col1 .dash{
+.flash .col1 .dash{
 	font-size:18px;
 	font-weight: bolder;
 }
 .flash .flashthing{
+	position:relative;
+	top:0px;
+	left:10px;
 	overflow: hidden;
-	width: 1236px;
+	height:300px;
 }
 .flash .flashthing .fenqu{
-	width:2472px;
-	/*height:298px;*/
-	/*border:1px solid red;*/
-	float: left;
-	/*overflow: hidden;*/
-	
+	width:1984px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: all 0.3s;
 }
 .flash .flashthing .fenqu .shouji{
 	float:left;
-	overflow: hidden;
+	margin-left: 10px;
 }
 .main .hezi{
 	width:100%;
@@ -700,6 +708,12 @@
 .main .shouji .p3{
 	font-size: 12px;
 	color:#ff6700;
+	font-weight:bold;
+	margin-bottom: -5px;
+}
+.main .shouji .p4{
+	font-size: 12px;
+	color:gray;
 	font-weight:bold;
 }
 .main .shouji .biaoqian{

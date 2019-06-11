@@ -153,7 +153,7 @@ function handleCate(){
 //5.处理倒计时
 handelCountDown()
 function handelCountDown(){
-	var aTimerNum=document.querySelectorAll('.flash .flashthing .col1 .timer-num')
+	var aTimerNum=document.querySelectorAll('.flash .col1 .timer-num')
 	console.log(aTimerNum)
 	var endTime=new Date("2019-06-08 17:30:00");
 	var timer=null;
@@ -183,6 +183,7 @@ function handelElec(){
 	var oElecList=document.querySelector(".elec-item-list");
 	console.log(oElecList)
 	console.log(oEitem);
+	loadData(0);
 	for(var i=0; i<oEitem.length;i++){
 		oEitem[i].index=i;
 		oEitem[i].onmouseenter=function(){
@@ -195,18 +196,20 @@ function handelElec(){
 	}
 	function loadData(index){
 		var data=aElect[index];
+		var lastData=data[data.length-1];
+		console.log(data);
 		var html="";
-		for(var i=0;i<data.length;i++){
+		for(var i=0;i<data.length-1;i++){
 			html+=	'<li class="shouji clearfix">';
 			html+=	'	<a href="'+data[i].url+'">';
 			html+=	'		<img src="'+data[i].src+'" alt="" class="road1">';
 			html+=	'		<p class="p1">'+data[i].name+'</p>';
 			html+=	'		<p class="p2">'+data[i].des+'</p>';
-			html+=	'		<p class="p3">'+data[i].price+'元</p>';
-			html+=	'		<p class="p3">'+data[i].del+'元</p>';
+			html+=	'		<span class="p3">'+data[i].price+'元</span>';
+			html+=	'		<span class="p4"><del>'+data[i].del+'元</del></span>';
 			html+=	'	</a>';
 			if(data[i].flag){
-				html+='<p class="biaoqian'+data[i].flag.class+'">'+data[i].flag.name+'</p>'
+				html+='<p class="'+data[i].flag.class+'">'+data[i].flag.name+'</p>'
 			}
 			if(data[i].view){
 				html+=	'	<div class="yincang">';
@@ -216,6 +219,31 @@ function handelElec(){
 			}
 			html+=	'</li>';
 		}
+		html+=  '<li class="shouji1 clearfix">';
+		html+=		'<div class="last">';
+		html+=			'<p class="ppn">'+lastData.topname+'</p>';
+		html+=			'<p class="ppj">'+lastData.topprice+'元</p>';
+		html+=			'<img src="'+lastData.topimg+'" alt="" class="road1">';
+		html+=		'</div>';
+		html+=		'<div class="last1">';
+		html+=			'<p class="ppn">'+lastData.bottomname+'</p>';
+		html+=			'<p class="ppj">'+lastData.bottomthe+'</p>';
+		html+=			'<i class="iconfont">'+lastData.bottomicon+'</i>';
+		html+=		'</div>							';
+		html+=	'</li>';
 		oElecList.innerHTML=html;
+	}
+}
+//7. 处理闪购滑动
+handelMove()
+function handelMove(){
+	var oSpan=document.querySelectorAll('.flash .col-right2');
+	var oFenqu=document.querySelector('.flashthing .fenqu')
+	console.log(oFenqu)
+	oSpan[0].onclick=function(){
+		oFenqu.style.left="-734px";
+	}
+	oSpan[1].onclick=function(){
+		oFenqu.style.left="2px";
 	}
 }

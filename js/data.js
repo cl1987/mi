@@ -506,24 +506,10 @@ var aCateContentData=[
 	]
 ]
 
-// <li class="shouji clearfix">
-	// 	<a href="#">
-	// 		<img src="imgs/p1.jpg" alt="" class="road1">
-	// 		<p class="p1">小米9&nbsp;6GB+128GB</p>
-	// 		<p class="p2">骁龙855，索尼4800万超广角微距三摄</p>
-	// 		<p class="p3">2999元</p>
-	// 		<p class="biaoqian">新品</p>
-	// 	</a>
-
-	// 	<div class="yincang">
-	// 		<p class="ppn">小小的 喜欢 希望可以用久一点 还是不错的</p>
-	// 		<p class="ppj">来自2156774032用户的评价</p>
-	// 	</div>
-// </li>
 var aElect=[
 	[
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -539,7 +525,7 @@ var aElect=[
 			}
 		},
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -555,7 +541,7 @@ var aElect=[
 			}
 		},
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -571,7 +557,7 @@ var aElect=[
 			}
 		},
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -587,7 +573,7 @@ var aElect=[
 			}
 		},
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -603,7 +589,7 @@ var aElect=[
 			}
 		},
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -619,7 +605,7 @@ var aElect=[
 			}
 		},
 		{
-			url:"https//www.kuazhu.com",
+			url:"https://www.kuazhu.com",
 			src:"imgs/p2.jpg",
 			name:"小米9&nbsp;6GB+128GB",
 			des:"骁龙855，索尼4800万超广角微距三摄",
@@ -630,8 +616,8 @@ var aElect=[
 				name:"新品"
 			},
 			view:{
-				ppn:"小小的 喜欢 希望可以用久一点 还是不错的",
-				ppj:"来自2156774032用户的评价"
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
 			}
 		},
 		{
@@ -643,7 +629,342 @@ var aElect=[
 			bottomicon:"&#xe615;"
 		}
 	],
-	[],
-	[],
-	[]
+	[
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			topname:"小米净水器....",
+			topprice:"4399元",
+			topimg:"imgs/p1.jpg",
+			bottomname:"浏览更多",
+			bottomthe:"热门",
+			bottomicon:"&#xe615;"
+		}
+	],
+	[
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			flag:{
+				class:"biaoqian",
+				name:"促销"
+			},
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			topname:"小米净水器....",
+			topprice:"4399元",
+			topimg:"imgs/p2.jpg",
+			bottomname:"浏览更多",
+			bottomthe:"热门",
+			bottomicon:"&#xe615;"
+		}
+	],
+	[
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p2.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p2.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p2.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p2.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p1.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			url:"https://www.kuazhu.com",
+			src:"imgs/p2.jpg",
+			name:"小米9&nbsp;6GB+128GB",
+			des:"骁龙855，索尼4800万超广角微距三摄",
+			price:2999,
+			del:3999,
+			view:{
+				common:"小小的 喜欢 希望可以用久一点 还是不错的",
+				author:"来自2156774032用户的评价"
+			}
+		},
+		{
+			topname:"小米净水器....",
+			topprice:"4399元",
+			topimg:"imgs/p2.jpg",
+			bottomname:"浏览更多",
+			bottomthe:"热门",
+			bottomicon:"&#xe615;"
+		}
+	]
 ]
